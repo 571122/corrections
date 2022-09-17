@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div.card {
+        max-width: 560px;
+        position: relative;
+        padding: auto;
+        background: #ffffff;
+        box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+        border-radius: 8px;
+      }
+      .house {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .bud {
+        background: #ffffff;
+
+        border: 4px solid #666;
+
+        width: 56.2px;
+        height: 49.4px;
+        left: 56px;
+        top: 24px;
+      }
+
+      .buy {
+        padding: 0;
+        margin: 0;
+
+        width: 400px;
+        height: 29px;
+
+        /* LG / headingSmall */
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+
+        /* identical to box height, or 29px */
+
+        /* $blueGray900 */
+        color: #1e2a32;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+      .saving {
+        padding: 0;
+        margin: 0;
+
+        width: 400px;
+        height: 24px;
+
+        /* LG / paragraph */
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        /* identical to box height, or 24px */
+
+        /* $blueGray400 */
+        color: #708797;
+
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+
+      .tot-rech {
+        display: flex;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+      }
+
+      .inputs-container {
+        display: flex;
+      }
+
+      .everything {
+        box-sizing: border-box;
+        width: 272px;
+        height: 56px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        /* $neutralWhite */
+        background: #ffffff;
+
+        /* $blueGray50 */
+        border: 1px solid #e9eef2;
+        border-radius: 4px;
+      }
+
+      .okt {
+        box-sizing: border-box;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+
+        /* $neutralWhite */
+        background: #ffffff;
+
+        /* $blueGray50 */
+        border: 1px solid #e9eef2;
+        border-radius: 4px;
+        width: 192px;
+        height: 56px;
+      }
+
+      #calculation {
+        position: relative;
+        width: 480px;
+        height: 155px;
+        left: 7.1%;
+
+        /* $neutralWhite */
+        background: #ffffff;
+        border: 1px solid #e9eef2;
+        border-radius: 8px;
+      }
+
+      .container-planing {
+        width: 480px;
+        height: 80px;
+        background: #f4f8fa;
+        position: relative;
+        left: 0%;
+        bottom: 0px;
+      }
+
+      #inp_1: {
+        position: relative;
+      }
+
+      input {
+        background: #1b31a8;
+        border-color: #1b31a8;
+        border-radius: 32px;
+        width: 320px;
+        height: 56px;
+        position: relative;
+        left: 21.43%;
+        top: 40px;
+      }
+
+      input {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: Work Sans, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="white-background main-header"></header>
+
+    <main class="gray-background">
+      <div class="card">
+        <header class="house">
+          <div class="bud">
+            <img src="/IMG" alt="а_т" />
+          </div>
+          <div>
+            <h2 class="buy">Buy a hause</h2>
+            <span class="saving">Saving goal</span>
+          </div>
+        </header>
+
+        <div class="tot-rech">
+          <div class="total">Total amount</div>
+          <div class="reacalendarch">Reach goal by</div>
+        </div>
+
+        <div class="inputs-container">
+          <div class="everything">$25,000</div>
+          <div class="okt">-Oktober></div>
+        </div>
+
+        <div id="calculation">
+          <div class="m-s">
+            <div class="monthly">Monthly amount</div>
+            <div class="sum">$520.83</div>
+          </div>
+          <div class="container-planing"></div>
+        </div>
+        <div id="inp_1">
+          <input type="submit" name="submit" value="Confirm" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

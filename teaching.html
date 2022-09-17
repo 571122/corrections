@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Fira Sans", sans-serif;
+      }
+
+      #block {
+        width: 75px;
+        height: 75px;
+        background-color: gold;
+        position: relative;
+        left: 40%;
+        top: 0px;
+        transition: all 0.15s ease-in;
+      }
+
+      message {
+        display: none;
+      }
+
+      .wm {
+        min-height: 100px;
+      }
+
+      .box {
+        max-width: 450px;
+        height: 100vh;
+        position: relative;
+        background-color: #ccc;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      hr {
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+
+  <div>
+    <p>
+      Цей приклад показує як працює властивість <code>position</code>. Спробуйте
+      вимкнути/ввімкнути перемикач, щоб змінити тип позиціонування елементу
+      нижче. Далі змінюйте значення для самих власне координат.
+    </p>
+
+    <div class="inputs">
+      <input id="static" checked name="position" type="radio" />
+      <label for="static">static</label>
+      <message for="static"
+        >Елементи відображаються як зазвичай (в потоці формування
+        документа).</message
+      >
+
+      <input id="relative" name="position" type="radio" />
+      <label for="relative">relative</label>
+      <message for="relative"
+        >Відносне позиціювання. Положення елемента встановлюється відносно його
+        поточного положення.</message
+      >
+
+      <input id="absolute" name="position" type="radio" />
+      <label for="absolute">absolute</label>
+      <message for="absolute"
+        >Видаляє елемент з загального потоку (місце, що звільнив елемент
+        заповнюється іншими елементами) і вставляється відносно свого
+        батьківського.</message
+      >
+
+      <input id="fixed" name="position" type="radio" />
+      <label for="fixed">fixed</label>
+      <message for="fixed"
+        >За своєю дією це значення близьке до absolute, але на відміну від нього
+        позиціонує елемент відносно вікна браузера, а не документа та не змінює
+        свого положення при прокручуванні веб-сторінки.</message
+      >
+    </div>
+
+    <div class="wm">
+      <p id="message">
+        Елементи відображаються як зазвичай (в потоці формування документа). Без
+        задання.
+      </p>
+    </div>
+
+    <hr />
+
+    <strong>left: </strong>
+    <input type="number" class="input" id="left" value="0" />px
+    <strong>;</strong><br /><br />
+
+    <strong>top: </strong>
+    <input type="number" class="input" id="top" value="0" />px
+    <strong>;</strong> <br /><br />
+
+    <hr />
+
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div id="block"></div>
+    </div>
+  </div>
+</html>
